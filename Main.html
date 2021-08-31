@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>Job Application</title>
+    <link href="StyleSheet.css" rel="stylesheet">
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;492&display=swap" rel="stylesheet">
+    <main id="main">
+        <header>
+            <h1 id="title">Job Application</h1>
+            <p id="description">Fill out this form with your details for this job!</p>
+        </header>
+        <div id="form-div">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <br>
+                    <input type="text" id="name" class="input-box" name="input-name" placeholder="Enter your name"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <br>
+                    <input type="email" id="email" class="input-box" name="input-email" placeholder="Enter your email"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label for="age" id="number-label">Age <span id="optional">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="21" max="100" class="input-box"
+                        placeholder="Age" />
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label for="dropdown">How many years of experience do you have in this field?</label>
+                        <select id="dropdown" name="role" class="input-box" required>
+                            <option disabled selected value>Select number of years</option>
+                            <option value="0to2years">0 - 2 years</option>
+                            <option value="3to5years">3 - 5 years</option>
+                            <option value="6to10years">6 - 10 years</option>
+                            <option value="11to19years">11 - 19 years</option>
+                            <option value="20plusyears">20+ years</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="checkbox">Which coding languages do you know?</label>
+                    <br>
+                    <input class="input-checkbox" type="checkbox" name="language" value="java" id="checkbox" />Java
+                    <br>
+                    <input class="input-checkbox" type="checkbox" name="language" value="python" id="checkbox" />Python
+                    <br>
+                    <input class="input-checkbox" type="checkbox" name="language" value="c#" id="checkbox" />C#
+                    <br>
+                    <input class="input-checkbox" type="checkbox" name="language" value="c++" id="checkbox" />C++
+                    <br>
+                    <input class="input-checkbox" type="checkbox" name="language" value="more" id="checkbox" />More
+                </div>
+                <div class="form-group">
+                    <label for="radio-button">Do you think you will get this job?</label>
+                    <br>
+                    <input type="radio" class="input-radio" id="radio-button" name="dyt" value="yes" />Yes
+                    <br>
+                    <input type="radio" class="input-radio" id="radio-button" name="dyt" value="maybe" />Maybe
+                    <br>
+                    <input type="radio" class="input-radio" id="radio-button" name="dyt" value="no" />No
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Any comments or suggestions?</label>
+                    <textarea id="textarea" class="input-box" placeholder="Enter your comments here"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
